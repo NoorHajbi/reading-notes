@@ -22,32 +22,32 @@ CH1- STRUCTURE:
 Notepad and Notepad++ can be used to create a web page, just make the extension .html
 _______
 Some elements
-- <body> -> Everything inside this element is shown inside the main browser window.
-- <head> -> This contains information about the page (not shown inside).
-- <title> ->" Either shown in the top of the browser, or on the tab for that page (on a browser uses tabs)."
+- body -> Everything inside this element is shown inside the main browser window.
+-head -> This contains information about the page (not shown inside).
+- title ->" Either shown in the top of the browser, or on the tab for that page (on a browser uses tabs)."
 ___________________________
 Ch 8- Extra markup:
 
 - HTML has different versions.
 - DOCTYPE tells a browser which version of HTML the page is using.
-- for HTML5 <!DOCTYPE html>
-- <!--for comments --> 
+- for HTML5 !DOCTYPE html
+<!--for comments --> 
 - id attribute: uniquely identify that element from other elements on the page.
 - class attribute: a way to identify several elements.
-- <div>: used to group a set of elements together in one block-level box.
-- <span>: block-level and inline element like <div>, usually used with CSS.
+-div : used to group a set of elements together in one block-level box.
+- span: block-level and inline element like div, usually used with CSS.
 - iframe (inline frame): like a little window can be used with GPS location and Video.
 - src: specifies the URL.
 - height/ width: controls size.
-- <meta>: information about your web page.
+- meta: information about your web page.
 ___________________________
 CH 17- HTML5 Layout:
 
 - HTML5 introduces a new set of elements, allow dividing up the parts of a page:
-- <header>  <footer>: for dividing up appearance.
-- <nav>: to contain the major navigational blocks.
-- section>: groups related content together.
-- <figure>: mostly used to contain Images and Videos, also for other types.
+- header footer: for dividing up appearance.
+- nav : to contain the major navigational blocks.
+- section : groups related content together.
+- figure : mostly used to contain Images and Videos, also for other types.
 __________________________
 Ch 18 - Process & Design:
 in website designing you should consider:
