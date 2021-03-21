@@ -16,4 +16,5 @@ My GitHub link : (https://github.com/NoorHajbi)
 |  Read2b     |   [Revisions and the Cloud](read02b.md)    |
 |  Read3      |   [Structure web pages with HTML](read3.md)|
 |  Lab02b     |   [Growth Mindset](lab02b.md)              |
-|  Read04a    |   [Programming with JavaScript](read04a.md) |
+|  Read04a    |   [Programming with JavaScript](read04a.md)|
+|  Read05     |   [Operators and Loops](read05.md)         |
