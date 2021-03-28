@@ -23,6 +23,7 @@ My GitHub link : (<https://github.com/NoorHajbi>)
   
 ***Code 201 Reading notes***  
 
-| Assignment |             Link                                  |
-| -----------|---------------------------------------------------|
-|  class-01  |[Introductory HTML and JavaScript](201/class-01.md)|
+| Assignment |             Link                                           |
+| -----------|------------------------------------------------------------|
+|  class-01  |[Introductory HTML and JavaScript](201/class-01.md)         |
+|  class-02  |[HTML Text, CSS Introduction, and Basic JS](201/class-02.md)|
