@@ -27,3 +27,4 @@ My GitHub link : (<https://github.com/NoorHajbi>)
 | -----------|------------------------------------------------------------|
 |  class-01  |[Introductory HTML and JavaScript](201/class-01.md)         |
 |  class-02  |[HTML Text, CSS Introduction, and Basic JS](201/class-02.md)|
+|  class-03  |[HTML Lists, CSS Boxes, JS Control Flow](201/class-03.md)   |
