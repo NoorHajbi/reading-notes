@@ -18,10 +18,11 @@
 - To set box dimensions -> use width and height.
 - for limiting width to fit the user's screen -> use: min-width (the minimum size for a screen to display), max-width (maximum size).
 - also for limiting height -> min-height, max-height.
-- Overflowing content using overflow property; that handle when content overflows an element's box. 
+- Overflowing content using overflow property;  when content overflows box(larger than box), so this property tells the browser what to do in this case.
+- *Over flow has to values: * 
   
 | **Overflow values** |       1. hidden        |     	2. scroll                |
-| --------------------|------------------------|---------------------------------|
+| --------------------|------------------------|-------------------------------|
 |    **purpose**      |hides any extra content |	adds a scrollbar to the box  |  
 
 ---  
