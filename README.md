@@ -29,4 +29,4 @@ My GitHub link : (<https://github.com/NoorHajbi>)
 |  class-02  |[HTML Text, CSS Introduction, and Basic JS](201/class-02.md)|
 |  class-03  |[HTML Lists, CSS Boxes, JS Control Flow](201/class-03.md)   |
 |  class-04  |[HTML Links, CSS Layout, JS Functions](201/class-04.md)     |
-|  class-05  |[Read: 05 - HTML Images; CSS Color & Text](201/class-05.md) |
+|  class-05  |[HTML Images; CSS Color & Text](201/class-05.md)            |
