@@ -75,7 +75,7 @@
 14. `:link`, `:visited` -> for link styling.
 15. `:hover`, `:active`, `:focus` -> "specify appearance of elements when a user is interacting with them."
 
-
+<!-- go to table page 299-->
 
 ## From Blog Post
 ### JPEG vs PNG vs GIF  
