@@ -30,11 +30,13 @@ My GitHub link : (<https://github.com/NoorHajbi>)
 |  class-03  |[HTML Lists, CSS Boxes, JS Control Flow](201/class-03.md)   |
 |  class-04  |[HTML Links, CSS Layout, JS Functions](201/class-04.md)     |
 |  class-05  |[HTML Images; CSS Color & Text](201/class-05.md)            |
-|  class-06  |[HTML Images; CSS Color & Text](201/class-06.md)            |
-|  class-07  |[JS Object Literals; The DOM](201/class-07.md)              |
+|  class-06  |[JS Object Literals; The DOM](201/class-06.md)              |
+|  class-07  |[HTML Tables; JS Constructor Functions](201/class-07.md)    |
 |  class-08  |[                             ](201/class-08.md)            |
 |  class-09  |[                             ](201/class-09.md)            |
 
 
 # Refrences:
 1. [Understanding The Problem Domain Is The Hardest Part Of Programming](https://simpleprogrammer.com/understanding-the-problem-domain-is-the-hardest-part-of-programming).
+2. [Constructor W3Schools](https://www.w3schools.com/jsref/jsref_constructor_class.asp).
+3. [Object Constructors W3Schools](https://www.w3schools.com/js/js_object_constructors.asp).
