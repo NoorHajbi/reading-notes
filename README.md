@@ -34,6 +34,7 @@ My GitHub link : (<https://github.com/NoorHajbi>)
 |  class-07  |[HTML Tables; JS Constructor Functions](201/class-07.md)    |
 |  class-08  |[           More CSS Layout   ](201/class-08.md)            |
 |  class-09  |[           Forms and Events  ](201/class-09.md)            |
+|  class-10  |[           JS Debugging      ](201/class-10.md)            |
 
 
 # Refrences:
