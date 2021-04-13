@@ -23,21 +23,23 @@ My GitHub link : (<https://github.com/NoorHajbi>)
   
 ***Code 201 Reading notes***  
 
-| Assignment |             Link                                           |
-| -----------|------------------------------------------------------------|
-|  class-01  |[Introductory HTML and JavaScript](201/class-01.md)         |
-|  class-02  |[HTML Text, CSS Introduction, and Basic JS](201/class-02.md)|
-|  class-03  |[HTML Lists, CSS Boxes, JS Control Flow](201/class-03.md)   |
-|  class-04  |[HTML Links, CSS Layout, JS Functions](201/class-04.md)     |
-|  class-05  |[HTML Images; CSS Color & Text](201/class-05.md)            |
-|  class-06  |[JS Object Literals; The DOM](201/class-06.md)              |
-|  class-07  |[HTML Tables; JS Constructor Functions](201/class-07.md)    |
-|  class-08  |[           More CSS Layout   ](201/class-08.md)            |
-|  class-09  |[           Forms and Events  ](201/class-09.md)            |
-|  class-10  |[           JS Debugging      ](201/class-10.md)            |
-|  class-11  |[           Assorted Topics   ](201/class-11.md)            |
-|  class-12  |[Docs for the HTML Element & Chart.js](201/class-12.md)     |
-|  class-13  |[                 ](201/class-13.md)            |
+| Assignment |             Link                                              |
+| -----------|---------------------------------------------------------------|
+|  class-01  |[Introductory HTML and JavaScript](201/class-01.md)            |
+|  class-02  |[HTML Text, CSS Introduction, and Basic JS](201/class-02.md)   |
+|  class-03  |[HTML Lists, CSS Boxes, JS Control Flow](201/class-03.md)      |
+|  class-04  |[HTML Links, CSS Layout, JS Functions](201/class-04.md)        |
+|  class-05  |[HTML Images; CSS Color & Text](201/class-05.md)               |
+|  class-06  |[JS Object Literals; The DOM](201/class-06.md)                 |
+|  class-07  |[HTML Tables; JS Constructor Functions](201/class-07.md)       |
+|  class-08  |[           More CSS Layout   ](201/class-08.md)               |
+|  class-09  |[           Forms and Events  ](201/class-09.md)               |
+|  class-10  |[           JS Debugging      ](201/class-10.md)               |
+|  class-11  |[           Assorted Topics   ](201/class-11.md)               |
+|  class-12  |[Docs for the HTML Element & Chart.js](201/class-12.md)        |
+|  class-13  |[        Local Storage        ](201/class-13.md)               |
+| class-13B  |[CSS Transforms, Transitions, and Animations](201/class-13b.md)|
+|  class-14  |[                ](201/class-14.md)               |
 
 
 # Refrences:
