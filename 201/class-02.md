@@ -6,7 +6,7 @@
 - Tags also called markup.
 
 - Structural markup: elements that describe both headings and paragraphs.
-`<p> <h1> ..<h6> <sup> <sub> <b> <i> <br/> <hr/> -> horizontal rule between sections. `
+`<p> <h1> ..<h6> <sup> <sub> <b> <i> <br/> <hr/> `
 -White space collapsing -> blank spaces, newlines, or tabs. `<p> Hello    all </p>`.  
 
 - Semantic markup:  provides extra information, used according to their intended purpose.  ->

@@ -7,7 +7,7 @@ These rules associates with HTML elements
 p{margin:10px} p -> selector | margin -> property | 10px: value
 Properties affect how elements are displayed  
 
-### CSS selectors
+### CSS selectors (go to class 3(201-Selector))
 
 *{} -> Selects all elements  
 Type selecter (h1, p,..etc) -> elements that matches name  
