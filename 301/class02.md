@@ -20,3 +20,19 @@ state is handeled in the component and you can update it inside the component wh
 when stores something into application.
 4. **What are some examples of things that we could store in state?**
 Information that updating,like: Counter
+
+Reading
+**React lifecycle** https://medium.com/@joshuablankenshipnola/react-component-lifecycle-events-cb77e670a093
+
+
+Additional Resources
+**React Bootstrat Documentation** https://react-bootstrap.github.io/
+**Netlify**https://www.netlify.com/
+
+https://www.youtube.com/watch?v=IYvD9oBCuJI
+
+
+Bookmark/Skim
+**React Docs - State and Lifecycle** https://reactjs.org/docs/state-and-lifecycle.html
+**React Docs - handling events** https://reactjs.org/docs/handling-events.html
+**React Tutorial through ‘Developer Tools’** https://reactjs.org/tutorial/tutorial.html
