@@ -58,7 +58,7 @@ A uni-directional flow(one way from parent to child).
 
 - A component takes in parameters called *props*, and returns a hierarchy of views to display via the *render* method.
 
-https://reactjs.org/tutorial/tutorial.html
+<!-- https://reactjs.org/tutorial/tutorial.html
 https://reactjs.org/docs/hello-world.html
 https://reactjs.org/docs/introducing-jsx.html
 https://reactjs.org/docs/rendering-elements.html
@@ -67,4 +67,4 @@ https://reactjs.org/docs/components-and-props.html
 Assignment Instructions
 Read for understanding the assigned resources for this class and watch any assigned videos. Also skim and bookmark the additional resources provided. Prepare an entry for your Readings Notes Repository that answers each and every question presented above.
 
-Make a section in your notes titled ## Things I want to know more about, and anytime a question arises in your mind, or something catches your curiosity, write it down under this heading.
+Make a section in your notes titled ## Things I want to know more about, and anytime a question arises in your mind, or something catches your curiosity, write it down under this heading. -->
