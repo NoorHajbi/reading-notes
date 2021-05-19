@@ -51,6 +51,9 @@ My GitHub link : (<https://github.com/NoorHajbi>)
 |  class-02  |[State and Props](301/class02.md)                          |
 |  class-03  |[Passing Functions as Props](301/class03.md)               |
 |  class-04  |[React and Forms](301/class04.md)                          |
+|  class-05  |[Putting it all together](301/class05.md)                  |
+
+
   
 # Refrences:
 1. [Understanding The Problem Domain Is The Hardest Part Of Programming](https://simpleprogrammer.com/understanding-the-problem-domain-is-the-hardest-part-of-programming).
