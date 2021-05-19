@@ -46,3 +46,8 @@ we can pass a method inside a child object which inside that function.
 
 - **How does the child component invoke a method that was passed to it from a parent component?**
 pass the method as a prop in child component.
+
+---
+<!-- ## Bookmark/Skim
+https://reactjs.org/tutorial/tutorial.html
+https://reactjs.org/docs/lifting-state-up.html -->
