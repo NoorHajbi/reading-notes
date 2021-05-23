@@ -52,6 +52,7 @@ My GitHub link : (<https://github.com/NoorHajbi>)
 |  class-03  |[Passing Functions as Props](301/class03.md)               |
 |  class-04  |[React and Forms](301/class04.md)                          |
 |  class-05  |[Putting it all together](301/class05.md)                  |
+|  class-06  |[NODE.JS](301/class06.md)                                  |
 
 
   
