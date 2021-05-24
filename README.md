@@ -53,7 +53,7 @@ My GitHub link : (<https://github.com/NoorHajbi>)
 |  class-04  |[React and Forms](301/class04.md)                          |
 |  class-05  |[Putting it all together](301/class05.md)                  |
 |  class-06  |[NODE.JS](301/class06.md)                                  |
-
+|  class-07  |[REST](301/class07.md)                                     |
 
   
 # Refrences:
