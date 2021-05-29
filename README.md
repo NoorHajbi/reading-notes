@@ -57,7 +57,7 @@ My GitHub link : (<https://github.com/NoorHajbi>)
 |  class-08  |[APIs](301/class08.md)                                     |
 |  class-09  |[FUNCTIONAL PROGRAMMING](301/class09.md)                   |
 |  class-10  |[In memory storage](301/class10.md)                        |
-  
+|  class-11  |[Authentication](301/class11.md)                           |  
 # Refrences:
 1. [Understanding The Problem Domain Is The Hardest Part Of Programming](https://simpleprogrammer.com/understanding-the-problem-domain-is-the-hardest-part-of-programming).
 2. [Constructor W3Schools](https://www.w3schools.com/jsref/jsref_constructor_class.asp).
