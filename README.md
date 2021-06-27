@@ -65,7 +65,7 @@ My GitHub link : [Noor Hajbi](https://github.com/NoorHajbi)
   
 | Assignment |             Link                                          |
 | -----------|-----------------------------------------------------------|
-|  class-01  |                                                           |  
+|  class-01  | [ Java Basics](401/class01.md)                            |  
   
 # Refrences:
 1. [Understanding The Problem Domain Is The Hardest Part Of Programming](https://simpleprogrammer.com/understanding-the-problem-domain-is-the-hardest-part-of-programming).
