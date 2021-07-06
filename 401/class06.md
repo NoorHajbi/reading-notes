@@ -148,3 +148,16 @@ public class RectanglePlus
 ![SubClass and SuperClass](../img/subSuper.png)
 
 `Note: In a subclass, you can overload the methods inherited from the superclass. Such overloaded methods neither hide nor override the superclass instance methods—they are new methods, unique to the subclass.`
+
+### Polymorphism
+`The dictionary definition of polymorphism refers to a principle in biology in which an organism or species can have many different forms or stages.`
+
+  
+![Example](https://javatutorial.net/wp-content/uploads/2017/10/java-polymorphism-featured-image-1280x720.png)
+
+So, as in photo, it refers to the ability of an object to take on many forms.  
+
+### Super
+
+
+
