@@ -71,7 +71,9 @@ My GitHub link : [Noor Hajbi](https://github.com/NoorHajbi)
 |  class-04  | [OOP](401/class04.md)                                     |   
 |  class-05  | [Linked Lists](401/class05.md)                            |   
 |  class-06  | [Inheritance and Interfaces](401/class06.md)              |  
-|  class-07  | [OO Design](401/class07.md)              | 
+|  class-08  | [OO Design](401/class08.md)              | 
+|  class-09  | [WRRC and Java](401/class09.md)              | 
+
 
 # Refrences:
 1. [Understanding The Problem Domain Is The Hardest Part Of Programming](https://simpleprogrammer.com/understanding-the-problem-domain-is-the-hardest-part-of-programming).
