@@ -73,6 +73,7 @@ My GitHub link : [Noor Hajbi](https://github.com/NoorHajbi)
 |  class-06  | [Inheritance and Interfaces](401/class06.md)              |  
 |  class-08  | [OO Design](401/class08.md)              | 
 |  class-09  | [WRRC and Java](401/class09.md)              | 
+|  class-10  | [Stacks & Queues](401/class10.md)              | 
 
 
 # Refrences:
