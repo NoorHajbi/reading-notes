@@ -76,5 +76,43 @@ Spring MVC calls the pieces of data that can be accessed during the execution of
 
 ### 2. Request parameters
 
-- Request parameters are passed from the client to server
+- Request parameters are passed from the client to server, Like :
+`https://example.com/query?q=Thymeleaf+Is+Great!`
+
+If we have @Controller that sends a redirect with a request parameter:
+```
+@Controller
+        public class SomeController {
+            @RequestMapping("/")
+            public String redirect() {
+                return "redirect:/query?q=Thymeleaf+Is+Great!";
+            }
+        }
+```
+
+- we use the `param` to access `q` parameter, using brackets syntax:
+`<p th:text="${param.q[0] + ' ' + param.q[1]}" th:unless="${param.q == null}">Test</p>`
+
+- another way, using the special `#request` object:
+`<p th:text="${#request.getParameter('q')}" th:unless="${#request.getParameter('q') == null}">Test</p>`
+
+---
+
+- we can add `mySessionAttribute` to session, Or by using `#session`, that gives us direct access to the *javax.servlet.http.HttpSession object*.
+
+---
+
+### 4. ServletContext attributes
+- The ServletContext attributes are shared between requests and sessions.
+- and to access it we can use, `#servletContext`.
+
+---
+### 5. Spring beans
+
+Thymeleaf allows accessing beans registered at the Spring Application Context with the `@beanName` syntax:
+    `<div th:text="${@urlService.getApplicationUrl()}">...</div>`
+
+*@urlService refers to a Spring Bean registered at your context*.     
+
+
 
