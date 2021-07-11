@@ -13,8 +13,10 @@
 
 ### Stacks follow these concepts:
 
-1. **FILO (First In Last Out)** -> The first item pushed into the stack, The last item popped out of the stack.
+1. **FILO (First In Last Out)** -> The first item pushed into the stack, The last item popped out of the stack. 
+- ex: As in text editor
 2. 1. **LIFO (Last In First Out)** -> The last item pushed into the stack, The first item popped out of the stack.
+- ex: as ctrl+Z
 
 ![stack](../img/stack.png)  
 
@@ -80,6 +82,7 @@ return top = NULL
 1. **FIFO (First In First Out)** -> The first item in the queue, The first item out.
 2. **LILO (Last In Last Out)** -> The last item in the queue, The last item out.
 
+- we use it with mails and caching.
 ![queue](../img/queue.png)  
 
 - **Enqueue O(1)**
@@ -113,6 +116,10 @@ Same as in the stack
 
 - **IsEmpty O(1)**
 
+- additional:
+### [Types of Queue](https://www.baeldung.com/cs/types-of-queues):
+1. **Circular Queue** - > the last node(**front**) points to the first node(**rear**) and creates a circular connection,  Thus, it allows us to insert an item at the first node of the queue when the last node is full and the first node is free.
 
+It’s also called a ring buffer:
 
 
