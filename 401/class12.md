@@ -169,3 +169,53 @@ that includes @SpringBootApplication, to run.
 
 
 ## [Baeldung: Comparing repositories](https://www.baeldung.com/spring-data-repositories)
+2. Spring Data Repositories
+
+**The JpaRepository** – which extends PagingAndSortingRepository and, in turn, the CrudRepository.
+- JpaRepository contains the full API of CrudRepository and PagingAndSortingRepository.
+
+- Each of these defines its own functionality:
+
+1. **CrudRepository** provides CRUD functions
+2. **PagingAndSortingRepository** provides methods to do pagination and sort records
+3. **JpaRepository** JPA related methods such as flushing the persistence context and delete records in a batch
+
+3. CrudRepository
+```
+public interface CrudRepository<T, ID extends Serializable>
+  extends Repository<T, ID> {
+
+    <S extends T> S save(S entity);
+
+    T findOne(ID primaryKey);
+
+    Iterable<T> findAll();
+
+    Long count();
+
+    void delete(T entity);
+
+    boolean exists(ID primaryKey);
+}
+```
+- The typical CRUD functionality:
+
+1. save(…) – save an Iterable of entities. 
+2. findOne(…) 
+3. findAll() – get an Iterable of all available entities in database
+4. count() – return the count of total entities in a table
+5. delete(…) – delete an entity based on the passed object
+6. exists(…) – verify if an entity exists based on the passed primary key value
+
+
+4. PagingAndSortingRepository
+
+- findAll(Pageable pageable) -> is the key to implementing Pagination.
+
+- When using Pageable, we create a Pageable object with certain properties and we've to specify at least:
+
+1. Page size
+2. Current page number
+3. Sorting
+
+
