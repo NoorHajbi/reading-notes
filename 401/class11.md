@@ -1,5 +1,5 @@
 # Read: 11 - Spring
-
+ <!-- هو مبدأ او نموذج معماري architectural pattern يستخدم للتعامل مع واجهات المستخدم في تطبيقات -->
 
 ## [Spring App Basics](https://spring.io/guides/gs/serving-web-content/)
 
