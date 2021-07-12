@@ -147,7 +147,25 @@ We  need a @Configuration class to enable the full MVC support and configure cla
 
 
 
-
 ## [Spring guide: Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
+
+To build an application that stores Customer POJOs (Plain Old Java Objects) in a memory-based database.
+
+1. Define a Simple Entity
+
+- The Class is annotated with @Entity, indicating that it is a JPA entity. (Because no @Table annotation exists, it is assumed that this entity is mapped to a table named Customer.)
+
+- what iniside @Id, JPA recognizes it as the object’s ID.
+ The id property is also annotated with @GeneratedValue to indicate that the ID should be generated automatically.
+
+2. Create Simple Queries
+
+- Spring Data JPA focuses on using JPA to store data in a relational database.
+- Spring Data JPA also lets you define other query methods by declaring their method signature. ex: Student Class, has findByLastName().
+
+
+3. Create an Application Class
+that includes @SpringBootApplication, to run.
+
 
 ## [Baeldung: Comparing repositories](https://www.baeldung.com/spring-data-repositories)
