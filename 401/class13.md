@@ -130,5 +130,13 @@ public class Book {
     //...
 }
 ```
+
 ## [Baeldung: Spring Integration Testing](https://www.baeldung.com/integration-testing-in-spring)
+
+- In dependencies :
+we'll need the latest junit-jupiter-engine, junit-jupiter-api, and Spring test dependencies.
+
+### Spring MVC Test Configuration
+
+
 
