@@ -59,4 +59,11 @@ We go Level by level.
 
 - The Big O **space complexity** of a BST **search** would be **O(1)**.
 
+
+--------
+
+
+## [Binary Tree vs Binary Search Tree](https://www.upgrad.com/blog/binary-tree-vs-binary-search-tree/)
   
+
+![BT-BST](../img/BT-BST.png)  
