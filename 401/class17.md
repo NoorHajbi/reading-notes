@@ -12,6 +12,8 @@ To create application uses GitHub for authentication.
 3. Add  Spring Security OAuth 2.0 Client dependency.
 4. Add a New GitHub App.
 5. Then, to make the link to GitHub, add the following to your application.yml:
+
+
 ```
 spring:
   security:
@@ -29,6 +31,8 @@ spring:
 - It then uses the access token to ask GitHub for some personal details (only what you permitted it to do), including your login ID and your name. In this phase, GitHub is acting as a Resource Server, decoding the token that you send and checking if it gives the app permission to access the user’s details. If that process is successful, the app inserts the user details into the Spring Security context so that you are authenticated.
 
 - This is what we can add to index.html:
+
+
 ```
 <div class="container unauthenticated">
     With GitHub: <a href="/oauth2/authorization/github">click here</a>
@@ -39,6 +43,7 @@ spring:
 ```
 
 - example for adding server-side endpoint:
+
 ```
 @GetMapping("/user")
     public Map<String, Object> user(@AuthenticationPrincipal OAuth2User principal) {
@@ -47,6 +52,8 @@ spring:
 ```
 
 - in the `configure` for making the home page public:
+
+
 ```
  @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -75,6 +82,8 @@ spring:
 ### Adding the Client Registration
 
 - Add this to `application.yml`:
+
+
 ```
 spring:
   security:
