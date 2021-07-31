@@ -32,7 +32,6 @@ spring:
 
 - This is what we can add to index.html:
 
-
 ```
 <div class="container unauthenticated">
     With GitHub: <a href="/oauth2/authorization/github">click here</a>
