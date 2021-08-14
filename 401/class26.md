@@ -1,4 +1,4 @@
-# Read: 26 - Android Fundamentals
+# Read: 26 - [Android Fundamentals](https://developer.android.com/guide/components/fundamentals)
 
 - Android apps can be written using Kotlin, Java, and C++ languages.
 
