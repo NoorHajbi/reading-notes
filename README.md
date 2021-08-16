@@ -84,6 +84,7 @@ My GitHub link : [Noor Hajbi](https://github.com/NoorHajbi)
 |  class-19  | [Real time messaging with websockets](401/class19.md)|
 |  class-26 | [Android Fundamentals](401/class26.md)|
 |  class-27 | [Intents, Activities, and SharedPreferences](401/class27.md)|
+|  class-28 | [RecyclerView](401/class28.md)|
 
 
 # Refrences:
