@@ -86,6 +86,8 @@ My GitHub link : [Noor Hajbi](https://github.com/NoorHajbi)
 |  class-27 | [Intents, Activities, and SharedPreferences](401/class27.md)|
 |  class-28 | [RecyclerView](401/class28.md)|
 |  class-29 | [Room](401/class29.md)|
+|  class-30 | [Hash Tables](401/class30.md)|
+|  class-31 | [Espresso](401/class31.md)|
 
 # Refrences:
 1. [Understanding The Problem Domain Is The Hardest Part Of Programming](https://simpleprogrammer.com/understanding-the-problem-domain-is-the-hardest-part-of-programming).
