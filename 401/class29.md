@@ -89,5 +89,286 @@ public abstract class AppDatabase extends RoomDatabase {
 ```
 
 ## [Defining entities in Room](https://developer.android.com/training/data-storage/room/defining-data)
+- Room entities to define your database schema(table), 
+and each instance of an entity represents a row of data in the corresponding table.
+
+```
+@Entity(tableName = "users")
+public class User {
+    @PrimaryKey
+    public int id;
+
+    @ColumnInfo(name = "first_name")
+    public String firstName;
+
+    @ColumnInfo(name = "last_name")
+    public String lastName;
+}
+```
+
+### Define a composite primary key
+
+```
+@Entity(primaryKeys = {"firstName", "lastName"})
+public class User {
+    public String firstName;
+    public String lastName;
+}
+```
+
+### Ignore fields
+
+```
+@Entity
+public class User {
+    @PrimaryKey
+    public int id;
+
+    public String firstName;
+
+    @Ignore
+    Bitmap picture;
+}
+```
+OR
+```
+@Entity(ignoredColumns = "picture")
+public class RemoteUser extends User {
+    @PrimaryKey
+    public int id;
+
+    public boolean hasVpn;
+}
+```
+
+
 ## [Related entities in Room](https://developer.android.com/training/data-storage/room/relationships)
+### Create embedded objects
+- use the @Embedded annotation to represent an object that you'd like to decompose into its subfields within a table. 
+
+```
+public class Address {
+    public String street;
+    public String state;
+    public String city;
+
+    @ColumnInfo(name = "post_code") public int postCode;
+}
+
+@Entity
+public class User {
+    @PrimaryKey public int id;
+
+    public String firstName;
+
+    @Embedded public Address address;
+}
+```
+
+### Define one-to-one relationships
+```
+public class UserAndLibrary {
+    @Embedded public User user;
+    @Relation(
+         parentColumn = "userId",
+         entityColumn = "userOwnerId"
+    )
+    public Library library;
+}
+}
+```
+
+### Define one-to-many relationships
+
+```
+public class UserWithPlaylists {
+    @Embedded public User user;
+    @Relation(
+         parentColumn = "userId",
+         entityColumn = "userCreatorId"
+    )
+    public List<Playlist> playlists;
+}
+```
+```
+@Transaction
+@Query("SELECT * FROM User")
+public List<UserWithPlaylists> getUsersWithPlaylists();
+```
+### Define many-to-many relationships
+
+```
+public class PlaylistWithSongs {
+    @Embedded public Playlist playlist;
+    @Relation(
+         parentColumn = "playlistId",
+         entityColumn = "songId",
+         associateBy = @Junction(PlaylistSongCrossref.class)
+    )
+    public List<Song> songs;
+}
+
+public class SongWithPlaylists {
+    @Embedded public Song song;
+    @Relation(
+         parentColumn = "songId",
+         entityColumn = "playlistId",
+         associateBy = @Junction(PlaylistSongCrossref.class)
+    )
+    public List<Playlist> playlists;
+}
+```
+
+```
+@Transaction
+@Query("SELECT * FROM Playlist")
+public List<PlaylistWithSongs> getPlaylistsWithSongs();
+
+@Transaction
+@Query("SELECT * FROM Song")
+public List<SongWithPlaylists> getSongsWithPlaylists();
+```
+
+### Define nested relationships
+```
+@Entity
+public class User {
+    @PrimaryKey public long userId;
+    public String name;
+    public int age;
+}
+
+@Entity
+public class Playlist {
+    @PrimaryKey public long playlistId;
+    public long userCreatorId;
+    public String playlistName;
+}
+@Entity
+public class Song {
+    @PrimaryKey public long songId;
+    public String songName;
+    public String artist;
+}
+
+@Entity(primaryKeys = {"playlistId", "songId"})
+public class PlaylistSongCrossRef {
+    public long playlistId;
+    public long songId;
+}
+```
+```
+public class PlaylistWithSongs {
+    @Embedded public Playlist playlist;
+    @Relation(
+         parentColumn = "playlistId",
+         entityColumn = "songId",
+         associateBy = Junction(PlaylistSongCrossRef.class)
+    )
+    public List<Song> songs;
+}
+```
+```
+public class UserWithPlaylistsAndSongs {
+    @Embedded public User user;
+    @Relation(
+        entity = Playlist.class,
+        parentColumn = "userId",
+        entityColumn = "userCreatorId"
+    )
+    public List<PlaylistWithSongs> playlists;
+}
+```
+```
+@Transaction
+@Query("SELECT * FROM User")
+public List<UserWithPlaylistsAndSongs> getUsersWithPlaylistsAndSongs();
+```
+
 ## [Accessing data with Room](https://developer.android.com/training/data-storage/room/accessing-data#java)
+
+- DAOs make it easier for you to mock database access when you test your app.
+
+### Anatomy of a DAO
+
+- You can define each DAO as either an **interface** or an **abstract** class. 
+
+- The following code is an example of a simple DAO that defines methods for inserting, deleting, and selecting User objects in a Room database:
+
+```
+@Dao
+public interface UserDao {
+    @Insert
+    void insertAll(User... users);
+
+    @Delete
+    void delete(User user);
+
+    @Query("SELECT * FROM user")
+    List<User> getAll();
+}
+```
+
+- **There are two types of DAO methods that define database interactions:**
+
+1. Convenience methods that let you insert, update, and delete rows in your database without writing any SQL code.
+2. Query methods that let you write your own SQL query to interact with the database.
+
+### Convenience methods
+
+Room provides convenience annotations for defining methods that perform simple **inserts**, **updates**, and **deletes** without requiring you to write a SQL statement.
+
+- **for more complex inserts, updates, or deletes, or if you need to query the data in the database, use a query method instead.**
+
+- The **@Insert** annotation allows you to define methods that insert their parameters into the appropriate table in the database. 
+
+- The **@Update** annotation allows you to define methods that update specific rows in a database table. 
+
+- The **@Delete** annotation allows you to define methods that delete specific rows from a database table.
+
+### Query methods
+- The **@Query** annotation allows you to write SQL statements and expose them as DAO methods. 
+
+#### Simple queries
+
+
+```
+@Query("SELECT * FROM user")
+public User[] loadAllUsers();
+
+//And 
+
+@Query("SELECT first_name, last_name FROM user")
+public List<NameTuple> loadFullName();
+
+```
+
+#### Pass simple parameters to a query
+```
+@Query("SELECT * FROM user WHERE age > :minAge")
+public User[] loadAllUsersOlderThan(int minAge);
+
+//And
+
+@Query("SELECT * FROM user WHERE age BETWEEN :minAge AND :maxAge")
+public User[] loadAllUsersBetweenAges(int minAge, int maxAge);
+
+@Query("SELECT * FROM user WHERE first_name LIKE :search " +
+       "OR last_name LIKE :search")
+public List<User> findUserWithName(String search);
+```
+
+#### Pass simple parameters to a query
+```
+@Query("SELECT * FROM user WHERE region IN (:regions)")
+public List<User> loadUsersFromRegions(List<String> regions);
+```
+
+#### Query multiple tables
+```
+@Query("SELECT * FROM book " +
+       "INNER JOIN loan ON loan.book_id = book.id " +
+       "INNER JOIN user ON user.id = loan.user_id " +
+       "WHERE user.name LIKE :userName")
+public List<Book> findBooksBorrowedByNameSync(String userName);
+```
