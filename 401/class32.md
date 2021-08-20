@@ -76,6 +76,47 @@ A Serverless app consists of a web server, Lambda functions (FaaS), security tok
 
 
 ## [AWS Amplify Kool-Aid](https://aws.amazon.com/amplify/)
+- AWS Amplify is a set of tools and services that can be used together or on their own, to help front-end web and mobile developers build scalable full stack applications, powered by AWS.
 
+- Amplify supports popular web frameworks including JavaScript, React, Angular, Vue, Next.js, and mobile platforms including Android, iOS, React Native, Ionic, Flutter. Get to market faster with AWS Amplify.
 
-## [GraphQL Intro (just read the header text, Quick Start, and @model sections)](https://docs.amplify.aws/cli/graphql-transformer/overview/)
+### Benefits
+- Configure backends fast.
+- Seamlessly connect frontends.
+- Deploy in a few clicks.
+- Easily manage content.
+
+## [GraphQL Intro](https://docs.amplify.aws/cli/graphql-transformer/overview/)
+- Helps you quickly create backends for your web and mobile applications on AWS. 
+- With the GraphQL Transform, you define your application's data model using the GraphQL Schema Definition Language (SDL) and the library handles converting your SDL definition into a set of fully descriptive AWS CloudFormation templates that implement your data model.
+
+- **For example:**
+```
+type Blog @model {
+  id: ID!
+  name: String!
+  posts: [Post] @connection(name: "BlogPosts")
+}
+ype Post @model {
+  id: ID!
+  title: String!
+  blog: Blog @connection(name: "BlogPosts")
+  comments: [Comment] @connection(name: "PostComments")
+}
+type Comment @model {
+  id: ID!
+  content: String
+  post: Post @connection(name: "PostComments")
+}
+```
+
+### Create a GraphQL API
+
+1. `amplify init`
+2. `amplify add api`
+- Select GraphQL
+- When asked if you have a schema, say No
+- Select one of the default samples; you can change this later
+- Choose to edit the schema and it will open the new schema.graphql in your editor
+
+3. `amplify push`
