@@ -192,6 +192,7 @@ type Comment @model
 
 You can implement many to many using two 1-M @connections, an @key, and a joining @model. For example:
 
+  
 ```
 type Post @model {
   id: ID!
