@@ -153,6 +153,8 @@ mutation CreateProject {
 
 
 - **Has many**
+
+
 ```
 type Post @model {
   id: ID!
@@ -171,6 +173,7 @@ type Comment @model
 - **Belongs to**
 
 You can make a connection bi-directional by adding a many-to-one connection to types that already have a one-to-many connection. 
+
 
 ```
 type Post @model {
