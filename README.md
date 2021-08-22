@@ -90,7 +90,7 @@ My GitHub link : [Noor Hajbi](https://github.com/NoorHajbi)
 |  class-31 | [Espresso](401/class31.md)|
 |  class-32 | [Serverless and Amplify](401/class32.md)|
 |  class-33 | [GraphQL @connection](401/class33.md)|
-|  class-34 | [](401/class34.md)|
+|  class-34 | [Monetization](401/class34.md)|
 |  class-35 | [](401/class35.md)|
 |  class-36 | [](401/class34.md)|
 
