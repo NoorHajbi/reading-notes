@@ -71,3 +71,34 @@ You can choose the geographical AWS Region where Amazon S3 will store the bucket
 ---
 
 ### Amazon S3 features
+
+#### 1. **Storage classes**
+Amazon S3 offers a range of storage classes designed for different use cases.
+
+#### 2. **Bucket policies**
+- Bucket policies provide centralized access control to buckets and objects based on a variety of conditions, including Amazon S3 operations, requesters, resources, and aspects of the request (for example, IP address). 
+- The policies are expressed in the access policy language and enable centralized management of permissions. 
+- The permissions attached to a bucket apply to all of the bucket's objects that are owned by the bucket owner account.
+
+- Both individuals and companies can use bucket policies.
+
+#### 3. **AWS Identity and Access Management**
+- You can use AWS Identity and Access Management (IAM) to manage access to your Amazon S3 resources.
+
+#### 4. **Access control lists(ACL)**
+To control access to each of your buckets and objects.
+
+#### 5. **Versioning**
+To keep multiple versions of an object in the same bucket.
+
+#### 6. **Operations**
+- **Common operations**
+    - Create a bucket.
+    - Write an object.
+    - Read an object.
+    - Delete an object.
+    - List keys – List the keys contained in one of your buckets. You can filter the key list based on a prefix.
+
+---
+
+### Amazon S3 application programming interfaces (API)
