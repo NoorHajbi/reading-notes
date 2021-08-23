@@ -102,3 +102,90 @@ To keep multiple versions of an object in the same bucket.
 ---
 
 ### Amazon S3 application programming interfaces (API)
+- **The REST interface**
+- **The SOAP interface**
+
+---
+
+## [S3 with Amplify](https://docs.amplify.aws/lib/storage/getting-started/q/platform/android/)
+
+- **To setup and configure your application with Amplify Storage.**
+
+`amplify add storage`
+```
+? Please select from one of the below mentioned services:
+    `Content (Images, audio, video, etc.)`
+? You need to add auth (Amazon Cognito) to your project in order to add storage for user files. Do you want to add auth now?
+    `Yes`
+? Do you want to use the default authentication and security configuration?
+    `Default configuration`
+? How do you want users to be able to sign in?
+    `Username`
+? Do you want to configure advanced settings?
+    `No, I am done.`
+? Please provide a friendly name for your resource that will be used to label this category in the project:
+    `S3friendlyName`
+? Please provide bucket name:
+    `storagebucketname`
+? Who should have access:
+    `Auth and guest users`
+? What kind of access do you want for Authenticated users?
+    `create/update, read, delete`
+? What kind of access do you want for Guest users?
+    `create/update, read, delete`
+? Do you want to add a Lambda Trigger for your S3 Bucket?
+    `No`
+```
+
+`amplify push`
+
+```
+dependencies {
+    implementation 'com.amplifyframework:aws-storage-s3:1.24.0'
+    implementation 'com.amplifyframework:aws-auth-cognito:1.24.0'
+}
+```
+
+### Initialize Amplify Storage
+
+In OnCreate
+
+```
+
+        try {
+            // Add these lines to add the AWSCognitoAuthPlugin and AWSS3StoragePlugin plugins
+            Amplify.addPlugin(new AWSCognitoAuthPlugin());
+            Amplify.addPlugin(new AWSS3StoragePlugin());
+            Amplify.configure(getApplicationContext());
+
+            Log.i("MyAmplifyApp", "Initialized Amplify");
+        } catch (AmplifyException error) {
+            Log.e("MyAmplifyApp", "Could not initialize Amplify", error);
+        }
+    }
+```
+
+### Uploading data to your bucket
+
+```
+private void uploadFile() {
+    File exampleFile = new File(getApplicationContext().getFilesDir(), "ExampleKey");
+
+    try {
+        BufferedWriter writer = new BufferedWriter(new FileWriter(exampleFile));
+        writer.append("Example file contents");
+        writer.close();
+    } catch (Exception exception) {
+        Log.e("MyAmplifyApp", "Upload failed", exception);
+    }
+
+    Amplify.Storage.uploadFile(
+            "ExampleKey",
+            exampleFile,
+            result -> Log.i("MyAmplifyApp", "Successfully uploaded: " + result.getKey()),
+            storageFailure -> Log.e("MyAmplifyApp", "Upload failed", storageFailure)
+    );
+}
+```
+
+
