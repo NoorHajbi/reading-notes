@@ -35,3 +35,8 @@ dependencies {
 
 
 
+### Links to check
+
+- [Sign in](https://docs.amplify.aws/lib/auth/signin/q/platform/android/#multi-factor-authentication)
+- [Sign in with web UI](https://docs.amplify.aws/lib/auth/signin_web_ui/q/platform/android)
+- [Social sign in with web UI](https://docs.amplify.aws/lib/auth/social_signin_web_ui/q/platform/android/)
