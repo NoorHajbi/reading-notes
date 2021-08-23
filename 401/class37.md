@@ -55,31 +55,19 @@ You can choose the geographical AWS Region where Amazon S3 will store the bucket
 ---
 
 ### Amazon S3 data consistency model
-Amazon S3 provides strong read-after-write consistency for PUTs and DELETEs of objects in your Amazon S3 bucket in all AWS Regions. This applies to both writes to new objects as well as PUTs that overwrite existing objects and DELETEs. In addition, read operations on Amazon S3 Select, Amazon S3 Access Control Lists, Amazon S3 Object Tags, and object metadata (e.g. HEAD object) are strongly consistent.
+- Amazon S3 provides strong read-after-write consistency for PUTs and DELETEs of objects in your Amazon S3 bucket in all AWS Regions. 
+- This applies to both writes to new objects as well as PUTs that overwrite existing objects and DELETEs. In addition, read operations on Amazon S3 Select, Amazon S3 Access Control Lists, Amazon S3 Object Tags, and object metadata (e.g. HEAD object) are strongly consistent.
 
-Updates to a single key are atomic. For example, if you PUT to an existing key from one thread and perform a GET on the same key from a second thread concurrently, you will get either the old data or the new data, but never partial or corrupt data.
+- Updates to a single key are atomic. 
 
-Amazon S3 achieves high availability by replicating data across multiple servers within AWS data centers. If a PUT request is successful, your data is safely stored. Any read (GET or LIST) that is initiated following the receipt of a successful PUT response will return the data written by the PUT. Here are examples of this behavior:
-
-
-- A process writes a new object to Amazon S3 and immediately lists keys within its bucket. The new object will appear in the list.
-
-- A process replaces an existing object and immediately tries to read it. Amazon S3 will return the new data.
-
-- A process deletes an existing object and immediately tries to read it. Amazon S3 will not return any data as the object has been deleted.
-
-- A process deletes an existing object and immediately lists keys within its bucket. The object will not appear in the listing.
+- Amazon S3 achieves high availability by replicating data across multiple servers within AWS data centers. 
+- If a PUT request is successful, your data is safely stored. Any read (GET or LIST) that is initiated following the receipt of a successful PUT response will return the data written by the PUT. **Here are examples of this behavior:**
+    - A process writes a new object to Amazon S3 and immediately lists keys within its bucket. The new object will appear in the list.
+    - A process replaces an existing object and immediately tries to read it. Amazon S3 will return the new data.
+    - A process deletes an existing object and immediately tries to read it. Amazon S3 will not return any data as the object has been deleted.
+    - A process deletes an existing object and immediately lists keys within its bucket. The object will not appear in the listing.
 
 
+---
 
-Bucket configurations have an eventual consistency model. Specifically:
-
-- If you delete a bucket and immediately list all buckets, the deleted bucket might still appear in the list.
-
-- If you enable versioning on a bucket for the first time, it might take a short amount of time for the change to be fully propagated. We recommend that you wait for 15 minutes after enabling versioning before issuing write operations (PUT or DELETE) on objects in the bucket.
-
-
-#### Concurrent applications
-This section provides examples of behavior to be expected from Amazon S3 when multiple clients are writing to the same items.
-
-In this example, both W1 (write 1) and W2 (write 2) complete before the start of R1 (read 1) and R2 (read 2). Because S3 is strongly consistent, R1 and R2 both return color = ruby.
+### Amazon S3 features
