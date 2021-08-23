@@ -91,8 +91,8 @@ My GitHub link : [Noor Hajbi](https://github.com/NoorHajbi)
 |  class-32 | [Serverless and Amplify](401/class32.md)|
 |  class-33 | [GraphQL @connection](401/class33.md)|
 |  class-34 | [Monetization](401/class34.md)|
-|  class-35 | [](401/class35.md)|
-|  class-36 | [](401/class34.md)|
+|  class-35 | [Graphs](401/class35.md)|
+|  class-36 | [Cognito](401/class36.md)|
 
 
 # Refrences:
