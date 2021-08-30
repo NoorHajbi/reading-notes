@@ -98,6 +98,8 @@ My GitHub link : [Noor Hajbi](https://github.com/NoorHajbi)
 |  class-39 | [Kinesis](401/class39.md)|
 |  class-41 | [Intent Filters](401/class41.md)|
 |  class-42 | [Location](401/class42.md)|
+|  class-42-2 | [Ethics in Tech](401/class42-2.md)|
+
 
 
 
