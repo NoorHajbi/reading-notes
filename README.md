@@ -97,6 +97,9 @@ My GitHub link : [Noor Hajbi](https://github.com/NoorHajbi)
 |  class-38 | [Notifications](401/class38.md)|
 |  class-39 | [Kinesis](401/class39.md)|
 |  class-41 | [Intent Filters](401/class41.md)|
+|  class-42 | [Location](401/class42.md)|
+
+
 
 # Refrences:
 1. [Understanding The Problem Domain Is The Hardest Part Of Programming](https://simpleprogrammer.com/understanding-the-problem-domain-is-the-hardest-part-of-programming).
