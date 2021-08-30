@@ -60,7 +60,9 @@ What stuck out to me that some employees were ready to leave their job with goog
 # Ethics in Technology
 ## [Cyber-Security of self driving cars](https://phys.org/news/2017-02-cybersecurity-self-driving-cars.html)
 
-
+Personally, I'm not totally against self-driving cars because it could help people with disability but It hard to trust going in these cars in all places,
+But I'm against the cars that need some sort of internet-connectivity for its functionality, because these kinds of cars are susceptible to hackers.
+What stuck out to me, the story that about a Tesla driver who trusted totally in his car and passed away.
 
 
     
